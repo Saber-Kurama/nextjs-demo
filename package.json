@@ -8,10 +8,13 @@
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
     "gray-matter": "^4.0.3",
+    "isarray": "^2.0.5",
     "next": "^12.1.4",
+    "next-swagger-doc": "^0.2.1",
     "react": "^18.0.0 ",
     "react-dom": "^18.0.0",
     "remark": "^14.0.2",
-    "remark-html": "^15.0.1"
+    "remark-html": "^15.0.1",
+    "swagger-ui-react": "4.8.1"
   }
 }
