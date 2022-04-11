@@ -1,7 +1,7 @@
 /*
  * @Author: saber
  * @Date: 2022-04-11 17:19:42
- * @LastEditTime: 2022-04-11 17:19:43
+ * @LastEditTime: 2022-04-11 17:39:10
  * @LastEditors: saber
  * @Description: 
  */
@@ -13,7 +13,7 @@ const swaggerHandler = withSwagger({
     info: {
       title: 'Next Swagger API Example',
       version: '0.1.0',
-    },
+    }, 
   },
   schemaFolders: ['models'],
 });
