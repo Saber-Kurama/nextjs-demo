@@ -8,36 +8,36 @@
  * @swagger
  *
  * components:
- *   links:
- *     UserRepositories:
- *       operationId: getRepositoriesByOwner
- *       parameters:
- *         username: '$response.body#/username'
  *   schemas:
- *     user:
+ *     Result«List«MessageRecord»»:
  *        type: object
  *        properties:
- *          username:
+ *          code:
  *            type: string
- *            description: '用户名'
- *          uuid:
+ *          data:
+ *            type: array
+ *            items:
+ *              $ref: '#/components/schemas/MessageRecord'
+ *          desc:
  *            type: string
+ *          success:
+ *            type: bollean
  */
-
 /**
  * @swagger
- *  /api/message/list:
- *    get:
- *      tags:
- *        - message
- *      description: 获取消息列表
- *      responses:
- *        200:
- *          description: OK
- *          content:
+ * 
+ * /api/message/list:
+ *   get:
+ *     tags:
+ *       - message
+ *     description: 获取消息列表
+ *     responses:
+ *       200:
+ *         description: OK??
+ *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/user'
+ *               $ref: '#/components/schemas/Result«List«MessageRecord»»'
  */
 const handler = (_req, res) => {
   res.status(200).json({
